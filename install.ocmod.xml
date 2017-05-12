@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<code>iex_remove_menu</code>
+	<name>Remove Menu Opencart 2x and newer Versions </name>
+	<version>1.0</version>
+	<author>Saqib Ashraf</author>
+	<link>https://iextendlabs.com</link>
+
+	<file path="catalog/view/theme/*/template/common/header.tpl">
+		<operation>
+			<search><![CDATA[
+				<?php if ($categories) { ?>
+			]]></search>
+				<add position="replace"><![CDATA[
+	<?php if (1==0) { ?>
+			]]></add>
+		</operation>
+	</file>
+</modification>
